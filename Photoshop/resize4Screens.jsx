@@ -186,7 +186,7 @@ function UI () {
 		}
 
 		function integerValidate () {
-			var value = parseInt(this.text).toString();
+			var value = isNaN(parseInt(this.text)) ? '' : parseInt(this.text).toString();
 			if (!value) {
 				value = 1;
 			}
@@ -289,7 +289,7 @@ function UI () {
 	}
 
 	txt_motionvalue.onChange = function () {
-		var value = parseInt(this.text);
+		var value = isNaN(parseInt(this.text)) ? sld_motionvalue.minvalue : parseInt(this.text);
 		if (!value) {
 			value = 1;
 		}
