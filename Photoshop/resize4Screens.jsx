@@ -398,7 +398,6 @@ function main () {
 
 			if (pH <= pW) {
 				ndoc.resizeImage(undefined, height, res, ResampleMethod.BICUBIC);
-
 				ndoc.resizeCanvas(width, undefined, AnchorPosition.MIDDLECENTER);
 			} else {
 				ndoc.resizeImage(width, undefined, res, ResampleMethod.BICUBIC);
