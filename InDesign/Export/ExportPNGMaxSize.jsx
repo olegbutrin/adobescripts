@@ -200,7 +200,7 @@ function UI(count) {
   };
 
   txt_width.onChange = function () {
-    var text = txt_width.height;
+    var text = txt_width.text;
     var num = parseInt(text);
     if (!isNaN(num)) {
       num = num < 32 ? 32 : num;
@@ -213,7 +213,7 @@ function UI(count) {
   };
 
   txt_height.onChange = function () {
-    var text = txt_height.height;
+    var text = txt_height.text;
     var num = parseInt(text);
     if (!isNaN(num)) {
       num = num < 32 ? 32 : num;
